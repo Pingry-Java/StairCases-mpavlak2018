@@ -1,6 +1,6 @@
 /**
  * @author Mitchell Pavlak
- * @version 0.5
+ * @version 1.0
  * file containing two methods to print staircases made out of x's
  */
 import java.util.Scanner;
@@ -13,7 +13,7 @@ public class StairCases
 
   public static void main(String[] args)
   {
-    //TODO change the next line so it actually gets input from the user
+    
     System.out.println("Please enter the size of the staircase: ");
     Scanner askSize = new Scanner(System.in);
     int size = askSize.nextInt();
@@ -28,7 +28,7 @@ public class StairCases
    * @param the size of the ascending staircase
    */
   public static void printAscending(int size)
-  //TODO Finish this method
+
   	{
   	 int count = 0;
   	 while (count < size) 
@@ -43,7 +43,7 @@ public class StairCases
  	}
 	
   /**
-   * Write your javadoc here
+   * @param the size of the ascending staircase
    */
   public static void printDescending(int size) 
   	{
@@ -58,5 +58,5 @@ public class StairCases
   			System.out.println("");
   		}
   	}
-  //TODO Finish this method
+  
 }
