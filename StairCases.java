@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class StairCases
 {
   /**
-   * Main method demonstrates the other wo methods by calling each of them.
+   * Main method demonstrates the other two methods by calling each of them.
    * @param args Standard array of commandline String arguments. Not used in this program.
    */
 
@@ -25,8 +25,30 @@ public class StairCases
   }
 
   /**
+   * prints an ascending staircase (function is recursive)
    * @param the size of the ascending staircase
    */
+  public static void printAscending(int size) {
+	  if (size > 0) 
+	  {
+  		printAscending(size - 1);
+ 		 for (int i = 0; i < size; i++)
+ 		 {
+ 		 	System.out.print('x');
+ 		 }
+ 		 System.out.println("");
+	  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*  Old iterative function
+  
   public static void printAscending(int size)
 
   	{
@@ -41,11 +63,25 @@ public class StairCases
   	 	 System.out.println("");  	 	}
   	 
  	}
-	
+	*/ 
+
   /**
-   * @param the size of the ascending staircase
+   * Prints a descending staircase (function is recursive)
+   * @param the size of the staircase
    */
-  public static void printDescending(int size) 
+ public static void printDescending(int size) 
+ {
+ 	 for (int i = 0; i < size; i++)
+ 		 {
+ 		 	System.out.print('x');
+ 		 }
+ 		 System.out.println("");
+ 	if (size > 0)
+ 		printDescending(size-1);
+ }
+
+ /*  Old iterative function
+ public static void printDescending(int size) 
   	{
   	int sizeTemp = size;
   	while (sizeTemp > 0)
@@ -58,5 +94,6 @@ public class StairCases
   			System.out.println("");
   		}
   	}
+  */
   
 }
