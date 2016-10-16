@@ -24,29 +24,43 @@ public class StairCases
     printDescending(size);
   }
 
+
   /**
    * prints an ascending staircase (function is recursive)
    * @param the size of the ascending staircase
    */
-  public static void printAscending(int size) {
+  public static void printAscending(int size) 
+  {
 	  if (size > 0) 
 	  {
   		printAscending(size - 1);
- 		 for (int i = 0; i < size; i++)
- 		 {
- 		 	System.out.print('x');
- 		 }
+ 		for (int i = 0; i < size; i++)
+ 		{
+ 			System.out.print('x');
+ 		}
  		 System.out.println("");
 	  }
   }
-  
-  
-  
-  
-  
-  
-  
-  
+
+  /**
+   * Prints a descending staircase (function is recursive)
+   * @param the size of the staircase
+   */
+ public static void printDescending(int size) 
+ {
+ 	for (int i = 0; i < size; i++)
+ 	{
+ 	 	System.out.print('x');
+ 	}
+ 	System.out.println("");
+ 	if (size > 0)
+ 		printDescending(size-1);
+ }
+
+
+ 
+ 
+ 
   /*  Old iterative function
   
   public static void printAscending(int size)
@@ -65,20 +79,7 @@ public class StairCases
  	}
 	*/ 
 
-  /**
-   * Prints a descending staircase (function is recursive)
-   * @param the size of the staircase
-   */
- public static void printDescending(int size) 
- {
- 	 for (int i = 0; i < size; i++)
- 		 {
- 		 	System.out.print('x');
- 		 }
- 		 System.out.println("");
- 	if (size > 0)
- 		printDescending(size-1);
- }
+
 
  /*  Old iterative function
  public static void printDescending(int size) 
