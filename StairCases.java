@@ -58,9 +58,6 @@ public class StairCases
  }
 
 
- 
- 
- 
   /*  Old iterative function
   
   public static void printAscending(int size)
